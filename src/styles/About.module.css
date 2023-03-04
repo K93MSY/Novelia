@@ -8,19 +8,36 @@
   background-color: #000;
 }
 
-.main{
-    margin-top: 48px;
-    background: url(/b.svg) repeat;
-    background-size: 4px 4px;
-    min-height: calc(100vh - 48px);
+.main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 48px;
+  margin: auto;
+  background: url(/b.svg) repeat;
+  background-size: 4px 4px;
+  min-height: calc(100vh - 48px);
 }
 
-.card{
+.card {
+  position: static;
+  margin: 0 auto;
+  margin-top: 58px;
+  padding: 50px;
+  background: #ffffff;
+  backdrop-filter: blur(12px);
+  width: 100vw;
+}
+
+@media screen and (min-width: 750px) {
+  .card {
     position: static;
     margin: 0 auto;
+    margin-top: 58px;
     padding: 50px;
     border-radius: 15px;
     background: #ffffff;
     backdrop-filter: blur(12px);
     width: 60vw;
+  }
 }

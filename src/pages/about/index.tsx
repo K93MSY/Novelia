@@ -23,6 +23,9 @@ export default function About() {
         <div className={styles.card}>
             <h1><span style={{color:"#0390fc"}}>Q</span>What's Novelia?</h1>
         </div>
+        <div className={styles.card}>
+            <p><span style={{color:"#f52a2a"}}>A</span>Novelia is The Platform which can share your Works.</p>
+        </div>
       </main>
     </>
   );
