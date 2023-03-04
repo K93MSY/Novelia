@@ -1,0 +1,26 @@
+.fakenav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 48px;
+  background-color: #000;
+}
+
+.main{
+    margin-top: 48px;
+    background: url(/b.svg) repeat;
+    background-size: 4px 4px;
+    min-height: calc(100vh - 48px);
+}
+
+.card{
+    position: static;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 15px;
+    background: #ffffff;
+    backdrop-filter: blur(12px);
+    width: 60vw;
+}

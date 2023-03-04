@@ -1,0 +1,66 @@
+.Logo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    user-select: none;
+  }
+  
+  .top_navigation {
+    transition: 0.5s;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 48px;
+    line-height: 48px;
+    background: #000;
+  }
+  
+  .nbar {
+    background-color: #fff;
+    width: 38px;
+    height: 38px;
+    margin: 4px;
+    padding: 6px;
+    border-radius: 6px;
+  }
+  
+  .navigation {
+    display: grid;
+    grid-template-columns: .5fr 1fr 1.5fr;
+  }
+  
+  .nv_btn {
+    transition: 0.5s;
+    font-size: 13px;
+    height: 32px;
+    border: none;
+    background-color: var(--color-primary);
+    padding: 6px;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  
+  .nv_btn:hover {
+    background: var(--color-pshadow);
+  }
+  
+  @media screen and (min-width: 750px) {
+    .navigation {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    .nv_btn {
+      transition: 0.5s;
+      font-size: 15px;
+      height: 34px;
+      border-radius: 17px;
+      border: none;
+      background-color: var(--color-primary);
+      padding: 8px;
+      margin: 0 10px;
+      color: #fff;
+    }
+  }
