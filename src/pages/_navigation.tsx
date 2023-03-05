@@ -17,12 +17,10 @@ export default function Nav() {
   const [age, setAge] = useState(-280);
 
   const NavH = () => {
-    console.log("Hide!");
     setAge(-280);
   };
 
   const NavS = () => {
-    console.log("Show!");
     setAge(0);
   };
 
