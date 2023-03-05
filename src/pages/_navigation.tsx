@@ -14,7 +14,7 @@ import styles from "@/styles/nav.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Nav() {
-  const [age, setAge] = useState(0);
+  const [age, setAge] = useState(-280);
 
   const NavH = () => {
     console.log("Hide!");
