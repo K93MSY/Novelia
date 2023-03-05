@@ -1,10 +1,22 @@
-.Logo{
+  .Logo{
     color: #fff;
     font-size: 38px;
     text-align: center;
     user-select: none;
   }
-  
+
+  .fakenav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 48px;
+    background-color: #000;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
   .top_navigation {
     transition: 0.5s;
     position: fixed;
@@ -15,6 +27,8 @@
     height: 48px;
     line-height: 48px;
     background: #000;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
   
   .nbar {
@@ -29,7 +43,7 @@
   
   .navigation {
     display: grid;
-    grid-template-columns: .5fr 1fr 1.5fr;
+    grid-template-columns: 1fr 3fr 0fr;
   }
   
   .nv_btn {
@@ -58,6 +72,14 @@
     height: 100vh;
     background: #000;
   }
+
+  .hiden{
+    display: none;
+  }
+
+  .logosi{
+    display: block;
+  }
   
   @media screen and (min-width: 750px) {
     .navigation {
@@ -76,5 +98,13 @@
       padding: 8px;
       margin: 0 10px;
       color: #fff;
+    }
+
+    .hiden{
+      display: block;
+    }
+
+    .logosi{
+      display: none;
     }
   }
