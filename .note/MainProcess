@@ -1,0 +1,44 @@
+<mxfile host="app.diagrams.net" modified="2023-03-05T04:37:27.260Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="VK_0fsSrej-WSF6cB78f" version="21.0.2" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="arS947b97Zn28dug1xR9-0" value="Next.js Platform" style="swimlane;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="320" y="40" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="arS947b97Zn28dug1xR9-2" value="Build Pages" style="rounded=0;whiteSpace=wrap;html=1;" parent="arS947b97Zn28dug1xR9-0" vertex="1">
+          <mxGeometry x="10" y="30" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="arS947b97Zn28dug1xR9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="arS947b97Zn28dug1xR9-0" source="arS947b97Zn28dug1xR9-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arS947b97Zn28dug1xR9-4" value="Connect MongoDB" style="rounded=0;whiteSpace=wrap;html=1;" parent="arS947b97Zn28dug1xR9-0" vertex="1">
+          <mxGeometry x="10" y="80" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="arS947b97Zn28dug1xR9-7" value="Authentication System" style="rounded=0;whiteSpace=wrap;html=1;" parent="arS947b97Zn28dug1xR9-0" vertex="1">
+          <mxGeometry x="10" y="130" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="arS947b97Zn28dug1xR9-6" value="MongoDB DataBase" style="swimlane;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="600" y="40" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="jBFiXfLnysfm9I9E41G5-0" value="Dynamic Pages" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="40" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="jBFiXfLnysfm9I9E41G5-1" value="Login &amp;amp;&amp;nbsp;Register Pages" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="jBFiXfLnysfm9I9E41G5-0">
+          <mxGeometry x="20" y="30" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jBFiXfLnysfm9I9E41G5-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="arS947b97Zn28dug1xR9-2" target="jBFiXfLnysfm9I9E41G5-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jBFiXfLnysfm9I9E41G5-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jBFiXfLnysfm9I9E41G5-1" target="arS947b97Zn28dug1xR9-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
