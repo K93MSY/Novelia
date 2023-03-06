@@ -8,11 +8,15 @@ import styles from "@/styles/Login.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Signin() {
+  var check = [
+    "Failed",
+  ]
+
   return (
     <>
       <Head>
-        <title>Novelia|Login</title>
+        <title>Novelia|Signin</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -53,6 +57,7 @@ export default function Home() {
                   width="28"
                   className={styles.usinico}
                 />
+                <p className={styles.ckipt}>{check[0]}</p>
               </center>
             </div>
           </div>

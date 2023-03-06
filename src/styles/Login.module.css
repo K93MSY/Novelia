@@ -66,3 +66,11 @@
 .lgnbtn:hover{
     background: var(--color-pshadow);
 }
+
+.ckipt{
+    height: 0;
+    color: #e04141;
+    position: relative;
+    user-select: none;
+    top: -100px;
+}

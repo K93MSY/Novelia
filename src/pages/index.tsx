@@ -1,12 +1,17 @@
+//import modules
 import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Inter } from "next/font/google";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDoorOpen, faUser, faBars } from "@fortawesome/free-solid-svg-icons";
+
+//import styles
 import styles from "@/styles/Home.module.css";
 
-import Nav from "./_navigation";
+//import components
+import Nav from "@/components/_navigation";
+import Carousel from "@/components/_carousel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +30,9 @@ export default function Home() {
         exit={{ opacity: 0 }}
       >
         <Nav />
+        <div className={styles.m}>
+          <Carousel imglist={["owo"]} />
+        </div>
       </motion.div>
     </>
   );

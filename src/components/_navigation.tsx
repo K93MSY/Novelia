@@ -24,19 +24,6 @@ export default function Nav() {
     setAge(0);
   };
 
-  /*
-  const [ leftNavpos, tmpleftNavpos ] = useState(0);
-
-  const NavH = () =>{
-    console.log("clk")
-    tmpleftNavpos(0);
-  }
-
-  const NavS = () =>{
-    console.log("clk")
-    tmpleftNavpos(-260);
-  }*/
-
   return (
     <>
       <p className={styles.fakenav}></p>
