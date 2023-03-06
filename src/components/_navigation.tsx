@@ -29,8 +29,8 @@ export default function Nav() {
       <p className={styles.fakenav}></p>
       <nav className={styles.top_navigation}>
         <div className={styles.navigation}>
-          <div className={styles.navobjl} onClick={NavS}>
-            <FontAwesomeIcon icon={faBars} width="28" className={styles.nbar} />
+          <div className={styles.navobjl}>
+            <FontAwesomeIcon icon={faBars} width="28" className={styles.nbar} onClick={NavS}/>
           </div>
           <div className={styles.navobjc}>
             <center>
@@ -61,11 +61,12 @@ export default function Nav() {
       </nav>
       <nav className={styles.side} style={{ left: age }}>
         <div className={styles.sidegrid}>
-          <div className={styles.navobjl} onClick={NavH}>
+          <div className={styles.navobjl}>
             <FontAwesomeIcon
               icon={faXmark}
               width="28"
               className={styles.nbar}
+              onClick={NavH}
             />
           </div>
           <div>
