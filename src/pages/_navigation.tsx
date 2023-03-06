@@ -46,18 +46,22 @@ export default function Nav() {
             <FontAwesomeIcon icon={faBars} width="28" className={styles.nbar} />
           </div>
           <div className={styles.navobjc}>
-            <p className={styles.Logo}>Novelia</p>
+            <center>
+              <a href="/" className={styles.Logo}>
+                Novelia
+              </a>
+            </center>
           </div>
           <div className={styles.navobjr}>
             <center>
               <div className={styles.hiden}>
-                <a href="/login">
+                <a href="/signin">
                   <button className={styles.nv_btn}>
                     ログイン
                     <FontAwesomeIcon icon={faDoorOpen} width="16" />
                   </button>
                 </a>
-                <a href="/reg">
+                <a href="/signup">
                   <button className={styles.nv_btn}>
                     新規登録
                     <FontAwesomeIcon icon={faUser} width="12" />
@@ -69,8 +73,21 @@ export default function Nav() {
         </div>
       </nav>
       <nav className={styles.side} style={{ left: age }}>
-        <div className={styles.navobjl} onClick={NavH}>
-          <FontAwesomeIcon icon={faXmark} width="28" className={styles.nbar} />
+        <div className={styles.sidegrid}>
+          <div className={styles.navobjl} onClick={NavH}>
+            <FontAwesomeIcon
+              icon={faXmark}
+              width="28"
+              className={styles.nbar}
+            />
+          </div>
+          <div>
+            <center>
+              <a href="/about">
+                <button className={styles.sidbtns}>Noveliaについて</button>
+              </a>
+            </center>
+          </div>
         </div>
       </nav>
     </>

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDoorOpen, faUser, faBars } from "@fortawesome/free-solid-svg-icons";
 import styles from "@/styles/Home.module.css";
 
-import Nav from "./_navigation";
+import Nav from "../_navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +25,9 @@ export default function Home() {
         exit={{ opacity: 0 }}
       >
         <Nav />
+        <main>
+            
+        </main>
       </motion.div>
     </>
   );

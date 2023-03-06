@@ -1,21 +1,9 @@
-.fakenav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  width: 100vw;
-  height: 48px;
-  background-color: #000;
-}
-
 .main {
   position: absolute;
   left: 0;
   right: 0;
   top: 48px;
   margin: auto;
-  background: url(/b.svg) repeat;
-  background-size: 4px 4px;
   min-height: calc(100vh - 48px);
 }
 

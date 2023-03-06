@@ -1,0 +1,14 @@
+.text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100px;
+    text-align: center;
+    font-size: 45px;
+    color: var(--color-primary);
+    user-select: none;
+    text-decoration: none;
+}

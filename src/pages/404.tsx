@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Inter } from "next/font/google";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDoorOpen, faUser, faBars } from "@fortawesome/free-solid-svg-icons";
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/404.module.css";
 
 import Nav from "./_navigation";
 
@@ -25,6 +25,7 @@ export default function Home() {
         exit={{ opacity: 0 }}
       >
         <Nav />
+        <a href="/" className={styles.text}>404 Error|このページは存在しません</a>
       </motion.div>
     </>
   );
