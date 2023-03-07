@@ -1,0 +1,28 @@
+.carousel{
+    white-space: nowrap;
+    transition: .5s ease;
+}
+
+.carchild{
+    display: inline;
+}
+
+.imgchild{
+    position: relative;
+    top: -50px;
+    max-height: 300px;
+    max-width: 600px;
+    width: 70vw;
+    height: 35vw;
+}
+
+.leftarrow{
+    height: 50px;
+    width: 50px;
+}
+
+.cp{
+    /*
+    max-height: 300px;
+    height: 35vw;*/
+}

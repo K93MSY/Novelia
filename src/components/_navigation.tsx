@@ -15,13 +15,16 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Nav() {
   const [age, setAge] = useState(-280);
+  const [navbg, setNavbg] = useState("none");
 
   const NavH = () => {
     setAge(-280);
+    setNavbg("none");
   };
 
   const NavS = () => {
     setAge(0);
+    setNavbg("block");
   };
 
   return (
@@ -59,6 +62,7 @@ export default function Nav() {
           </div>
         </div>
       </nav>
+      <span className={styles.lnavbg} style={{ display:navbg }} />
       <nav className={styles.side} style={{ left: age }}>
         <div className={styles.sidegrid}>
           <div className={styles.navobjl}>

@@ -1,21 +1,39 @@
 //import modules
+import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination, Navigation } from "swiper";
 import { motion } from "framer-motion";
 import { Inter } from "next/font/google";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDoorOpen, faUser, faBars } from "@fortawesome/free-solid-svg-icons";
+
+//Images
+import removed from '@/images/removed.png'
+
+SwiperCore.use([Pagination, Navigation]);
 
 //import styles
 import styles from "@/styles/Home.module.css";
 
 //import components
 import Nav from "@/components/_navigation";
-import Carousel from "@/components/_carousel";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const images = [
+  removed,
+  removed,
+  removed,
+  removed,
+  removed,
+  removed,
+  removed,
+  removed,
+]
+
 export default function Home() {
+  const [cpView, setcpView] = useState(3);
+
   return (
     <>
       <Head>
@@ -31,7 +49,29 @@ export default function Home() {
       >
         <Nav />
         <div className={styles.m}>
-          <Carousel imglist={["owo","Hello World"]} />
+          <Swiper
+            slidesPerView={cpView}
+            pagination={{
+              clickable: true,
+            }}
+            navigation
+            loop={true}
+            className={styles.carousel}
+          >
+            {images.map((src:any, index:any) => {
+              return (
+                <SwiperSlide key={index}>
+                  <Image
+                    src={src}
+                    layout="responsive"
+                    width={640}
+                    height={400}
+                    alt="test_image"
+                  />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
       </motion.div>
     </>
