@@ -12,3 +12,6 @@ Framework : Next.js
 `npm install`  
 `npm run build`
 
+## Run Server 
+`npm run start`
+
