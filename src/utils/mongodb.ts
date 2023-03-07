@@ -1,7 +1,7 @@
 import mongoose, {ConnectOptions} from "mongoose";
 import * as dotenv from 'dotenv'
 dotenv.config()
-
+/*
 mongoose
   .connect(process.env.URLDBMONGO , {
     useNewUrlParser: true,
@@ -13,4 +13,4 @@ mongoose
   })
   .catch(() => {
     console.log("Error Connectiong to the Database");
-  });
+  });*/
