@@ -31,7 +31,7 @@ export default function Home() {
       >
         <Nav />
         <div className={styles.m}>
-          <Carousel imglist={["owo"]} />
+          <Carousel imglist={["owo","Hello World"]} />
         </div>
       </motion.div>
     </>

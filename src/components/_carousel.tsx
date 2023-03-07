@@ -12,21 +12,18 @@ import styles from "@/styles/nav.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Carousel(props: any) {
-
-  const Tmp:JSX.Element = (<></>);
   /*
+  var Tmp = [];
   for (let i = 0; i < Object.keys(props.imglist).length; i++) {
-    Tmp = (
-      <>
-        <li>{props.imglist[i]}</li>
-        <Tmp />
-      </>
-    );
+    Tmp.push(<li>{props.imglist[i]}</li>);
   }*/
   return (
     <>
       <ul>
-        </ul>
+        {props.imglist.map((item:any) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
     </>
   );
 }

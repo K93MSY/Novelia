@@ -26,7 +26,7 @@ export default function Home() {
       >
         <Nav />
         <main>
-            
+            <a>welcome</a>
         </main>
       </motion.div>
     </>
