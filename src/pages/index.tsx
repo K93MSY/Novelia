@@ -35,6 +35,11 @@ export default function Home() {
   const [cpView, setcpView] = useState(3);
 
   useEffect(() => {
+    if (window.innerWidth > 750) {
+      setcpView(3);
+    } else {
+      setcpView(1);
+    }
     window.addEventListener("resize", () => {
       if (window.innerWidth > 750) {
         setcpView(3);

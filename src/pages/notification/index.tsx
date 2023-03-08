@@ -5,18 +5,20 @@ import { motion } from "framer-motion";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Notification.module.css";
 import Nav from "@/components/_navigation";
-import Card from "@/components/_card"
+import Card from "@/components/_card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Notification() {
   const [ntfdata, setNtfData] = useState([]);
+  const [load, setLoad] = useState("block");
   useEffect(() => {
     const fetchNotif = async () => {
       const response = await fetch("/api/notification");
       const data = await response.json();
+      setLoad("none")
       setNtfData(data.notes);
     };
     fetchNotif();
@@ -38,6 +40,9 @@ export default function Notification() {
         <Nav />
         <main className={styles.main}>
           <p className={styles.head}>通知一覧</p>
+          <center style={{display:load}}>
+            <FontAwesomeIcon icon={faSpinner} className={styles.loader} />
+          </center>
           <div>
             <ul>
               {ntfdata.map((note: any) => (
@@ -50,8 +55,3 @@ export default function Notification() {
     </>
   );
 }
-/*
-<a href={note.text.substring(
-  note.text.indexOf("["),
-  note.text.indexOf("]")+1
-)}></a>*/
