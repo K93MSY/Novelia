@@ -8,6 +8,7 @@ import {
   faUser,
   faBars,
   faXmark,
+  faGear,
 } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
 import styles from "@/styles/nav.module.css";
@@ -81,6 +82,26 @@ export default function Nav() {
           </div>
           <div>
             <center>
+              <a href="/signin" className={styles.shown}>
+                <button className={styles.sbtnchild} style={{width:100}}>
+                  ログイン
+                  <FontAwesomeIcon
+                    icon={faDoorOpen}
+                    width="12"
+                    className={styles.bell}
+                  />
+                </button>
+              </a>
+              <a href="/signup" className={styles.shown}>
+                <button className={styles.sbtnchild} style={{width:100}}>
+                  新規登録
+                  <FontAwesomeIcon
+                    icon={faUser}
+                    width="12"
+                    className={styles.bell}
+                  />
+                </button>
+              </a>
               <a href="/about">
                 <button className={styles.sidbtns}>Noveliaについて</button>
               </a>
@@ -90,6 +111,17 @@ export default function Nav() {
                   通知
                   <FontAwesomeIcon
                     icon={faBell}
+                    width="12"
+                    className={styles.bell}
+                  />
+                </button>
+              </a>
+
+              <a href="/setting">
+                <button className={styles.sbtnchild}>
+                  設定
+                  <FontAwesomeIcon
+                    icon={faGear}
                     width="12"
                     className={styles.bell}
                   />

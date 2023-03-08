@@ -92,8 +92,8 @@
     display: none;
   }
 
-  .logosi{
-    display: block;
+  .shown{
+    display:inline;
   }
 
   .sidbtns{
@@ -168,7 +168,7 @@
       display: block;
     }
 
-    .logosi{
+    .shown{
       display: none;
     }
   }

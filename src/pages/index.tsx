@@ -1,5 +1,5 @@
 //import modules
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { Inter } from "next/font/google";
 
 //Images
-import removed from '@/images/removed.png'
+import removed from "@/images/removed.png";
 
 SwiperCore.use([Pagination, Navigation]);
 
@@ -29,10 +29,20 @@ const images = [
   removed,
   removed,
   removed,
-]
+];
 
 export default function Home() {
   const [cpView, setcpView] = useState(3);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 750) {
+        setcpView(3);
+      } else {
+        setcpView(1);
+      }
+    });
+  });
 
   return (
     <>
@@ -58,7 +68,7 @@ export default function Home() {
             loop={true}
             className={styles.carousel}
           >
-            {images.map((src:any, index:any) => {
+            {images.map((src: any, index: any) => {
               return (
                 <SwiperSlide key={index}>
                   <Image

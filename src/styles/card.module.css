@@ -13,8 +13,10 @@
   }
 
   .opcardbg{
+    position: relative;
+    left: -50px;
     height: 24px;
-    width: 100%;
+    width: calc(100% + 100px);
     background: #5c718e33;
   }
 
