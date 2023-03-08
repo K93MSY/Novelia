@@ -1,0 +1,15 @@
+.main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 48px;
+    margin: auto;
+    min-height: calc(100vh - 48px);
+  }
+  
+  .head{
+    color: var(--color-primary);
+    width: 100vw;
+    text-align: center;
+    font-size: 25px;
+  }

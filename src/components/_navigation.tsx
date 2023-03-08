@@ -9,6 +9,7 @@ import {
   faBars,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
+import { faBell } from "@fortawesome/free-regular-svg-icons";
 import styles from "@/styles/nav.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -33,7 +34,12 @@ export default function Nav() {
       <nav className={styles.top_navigation}>
         <div className={styles.navigation}>
           <div className={styles.navobjl}>
-            <FontAwesomeIcon icon={faBars} width="28" className={styles.nbar} onClick={NavS}/>
+            <FontAwesomeIcon
+              icon={faBars}
+              width="28"
+              className={styles.nbar}
+              onClick={NavS}
+            />
           </div>
           <div className={styles.navobjc}>
             <center>
@@ -62,7 +68,7 @@ export default function Nav() {
           </div>
         </div>
       </nav>
-      <span className={styles.lnavbg} style={{ display:navbg }} />
+      <span className={styles.lnavbg} style={{ display: navbg }} />
       <nav className={styles.side} style={{ left: age }}>
         <div className={styles.sidegrid}>
           <div className={styles.navobjl}>
@@ -77,6 +83,17 @@ export default function Nav() {
             <center>
               <a href="/about">
                 <button className={styles.sidbtns}>Noveliaについて</button>
+              </a>
+
+              <a href="/notification">
+                <button className={styles.sbtnchild}>
+                  通知
+                  <FontAwesomeIcon
+                    icon={faBell}
+                    width="12"
+                    className={styles.bell}
+                  />
+                </button>
               </a>
             </center>
           </div>

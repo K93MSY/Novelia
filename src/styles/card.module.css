@@ -1,0 +1,42 @@
+.opencard{
+    width: 20px;
+  }
+
+  .card {
+    position: static;
+    margin: 0 auto;
+    margin-top: 58px;
+    padding: 50px;
+    background: #ffffff;
+    backdrop-filter: blur(12px);
+    width: 100vw;
+  }
+
+  .opcardbg{
+    height: 24px;
+    width: 100%;
+    background: #5c718e33;
+  }
+
+  .title{
+    font-size: 25px;
+    user-select: none;
+  }
+
+  .text{
+    display: none;
+    user-select: none;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .card {
+      position: static;
+      margin: 0 auto;
+      margin-top: 58px;
+      padding: 50px;
+      border-radius: 15px;
+      background: #ffffff;
+      backdrop-filter: blur(12px);
+      width: 60vw;
+    }
+  }
